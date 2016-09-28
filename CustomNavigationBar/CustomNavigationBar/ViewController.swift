@@ -1,68 +1,70 @@
 //
 //  ViewController.swift
-//  CustomNavigationBar
+//  NavigationBarTitle
 //
-//  Created by SKS on 27/09/16.
-//  Copyright © 2016 YouTube-Swift3. All rights reserved.
+//  Created by ShrawanKumar Sharma on 28/09/16.
+//  Copyright © 2016 Notification. All rights reserved.
 //
 
 import UIKit
 
 class ViewController: UIViewController {
-
-    @IBOutlet weak var priceOutlet: UIBarButtonItem!
-    var button = UIButton()
     var timer = Timer()
-    var i = 0
+    var  i = 0
+
     override func viewDidLoad() {
         super.viewDidLoad()
+        // Do any additional setup after loading the view, typically from a nib.
         
-         timer = Timer.scheduledTimer(timeInterval: 0.4, target: self, selector: #selector(ViewController.update), userInfo: nil, repeats: true)
-
+        let btnName = UIButton()
+        //btnName.setImage(UIImage(named: "imagename"), forState: .Normal)
+        btnName.frame = CGRect(x: 0, y: 0, width: 65, height: 22)
+        btnName.addTarget(self, action: #selector(ViewController.buttonAction), for: .touchUpInside)
+        btnName.backgroundColor = UIColor.red
+        btnName.setTitleColor(UIColor.black, for: .normal)
+        btnName.setTitle("1", for: .normal)
+        btnName.backgroundColor = UIColor.clear
+        btnName.layer.borderWidth = 1
+        btnName.setTitleColor(UIColor.black, for: .normal )
         
-               // Do any additional setup after loading the view, typically from a nib.
-    }
-    
-    override func viewWillAppear(_ animated: Bool) {
-        
-        super.viewWillAppear(animated)
-        priceOutlet =  UIBarButtonItem()
-        button = UIButton(frame: CGRect(x: 0, y: 0, width: 50, height: 50 ) )
-        button.backgroundColor = UIColor.blue
-        button.setTitle("$400", for: .normal)
-        button.addTarget(self, action: #selector(buttonAction), for: .touchUpInside)
-        priceOutlet = UIBarButtonItem.init(customView: button)
-        self.navigationController?.navigationBar.backgroundColor = .red
-        self.navigationItem.rightBarButtonItem = priceOutlet
-
-        
-        //priceOutlet.customView = button
-
-        
+        //.... Set Right/Left Bar Button item
         let rightBarButton = UIBarButtonItem()
-        rightBarButton.customView = button
+        rightBarButton.customView = btnName
         self.navigationItem.rightBarButtonItem = rightBarButton
+      
+        timer = Timer.scheduledTimer(timeInterval: 0.4, target: self, selector: #selector(ViewController.update), userInfo: nil, repeats: true)
 
-    }
-    
-    
-    // must be internal or public.
-    func update() {
-        // Something cool
-        i=i+1
-        button.titleLabel?.text = "\( (i) * 200)"
+        
         
     }
-    
-    func buttonAction(sender: UIButton!) {
-        print("Button tapped")
+    func buttonAction(){
+        let button = self.navigationItem.rightBarButtonItem?.customView as? UIButton
+        //        let newButton = button as? UIButton
+        button?.setTitle("2", for: .normal)
+        
     }
-
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
 
 
-}
 
+func update() {
+    
+    DispatchQueue.main.async {
+        
+      
+       
+        var button = UIButton()
+        button = (self.navigationItem.rightBarButtonItem?.customView as? UIButton)!
+        button.setTitle("\(self.i)", for: .normal)
+        print(button.titleLabel?.text)
+        self.i = self.i +  1
+        button.setNeedsLayout()
+        button.setNeedsDisplay()
+    
+        
+    }
+
+    }}
