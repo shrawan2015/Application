@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Foundation
 
 extension UIView {
     func addConstrainsts(format:String ,viewsList: UIView...) {
@@ -27,11 +28,22 @@ extension UIColor {
     }
 }
 
+private var imageCache = NSCache<AnyObject, AnyObject>()
 
 extension UIImageView {
     
     func loadImageUsingUrlString(urlString: String) {
         let url = NSURL(string: urlString)
+        
+        image = nil //because the async image is differncet in difference cell
+        
+        
+        if  let imageFromUrlcache  = imageCache.object(forKey: urlString as AnyObject) {
+            self.image =  imageFromUrlcache as? UIImage
+            return
+
+        }
+        
         URLSession.shared.dataTask(with: url! as URL, completionHandler: { (data, respones, error) in
             
             if error != nil {
@@ -40,6 +52,11 @@ extension UIImageView {
             }
             
             DispatchQueue.main.async {
+                
+                
+                let imageData = UIImage(data: data!)
+                imageCache.setObject(imageData!, forKey: urlString as AnyObject)
+                
                 self.image = UIImage(data: data!)
 
             }

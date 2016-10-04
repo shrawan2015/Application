@@ -89,21 +89,21 @@ class SelectionBar: UIView,UICollectionViewDelegate,UICollectionViewDataSource,U
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
       //selected code
-        
+            homeController?.scrollToMenuIndex(index: indexPath.item)
                 print(indexPath.item)
-                let x = CGFloat(indexPath.item) * frame.width / 4
-                horizontalBarLeftAnchorConstraint?.constant = x
-        
-                UIView.animate(withDuration: 0.75, delay: 0, usingSpringWithDamping: 1, initialSpringVelocity: 1, options: .curveEaseOut, animations: {
-                   //what does this do  while animation
-                    self.layoutIfNeeded()
-                    }, completion: nil)
-
-    }
+//                let x = CGFloat(indexPath.item) * frame.width / 4
+//                horizontalBarLeftAnchorConstraint?.constant = x
+//        
+//                UIView.animate(withDuration: 0.75, delay: 0, usingSpringWithDamping: 1, initialSpringVelocity: 1, options: .curveEaseOut, animations: {
+//                   //what does this do  while animation
+//                    self.layoutIfNeeded()
+//                    }, completion: nil)
+//
+//    }
     
 }
 
-
+}
 //Custom SelectionCell
 class MenuCell : UICollectionViewCell {
     

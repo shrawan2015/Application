@@ -26,8 +26,10 @@ class CustomCell : UICollectionViewCell {
         
         didSet {
             albumTitle.text = video?.title
-            imageView.image = UIImage(named: (video?.thumbNailImage)!)
+        setupThumbnailImage()
+           // imageView.image = UIImage(named: (video?.thumbNailImage)!)
             albumSubTitle.text = "TaylorSwiftVEVO • 1,604,684,607 views • 2 years ago"
+        
         }
         
     }
@@ -145,7 +147,19 @@ class CustomCell : UICollectionViewCell {
         fatalError("init(coder:) has not been implemented")
     }
     
+//    func setupProfileImage() {
+//        if let profileImageUrl = video?.channel?.profileImageName {
+//            userProfileImageView.loadImageUsingUrlString(profileImageUrl)
+//        }
+//    }
     
+    func setupThumbnailImage() {
+        
+        
+        if let thumbnailImageUrl = video?.thumbNailImage {
+            imageView.loadImageUsingUrlString(urlString: thumbnailImageUrl)
+        }
+    }
     
     
 }
