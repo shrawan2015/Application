@@ -10,12 +10,13 @@ import UIKit
 
 class SelectionBar: UIView,UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout {
 
-
+    let selectionCell = "selectionCell"
     var homeController:HomeViewController?
     let imageNames = ["home", "trending", "subscriptions", "account"]
     
+    var horizontalBarLeftAnchorConstraint: NSLayoutConstraint?
+    
     lazy var collectioView :UICollectionView = {
-       
         let collectionFlowLayout =  UICollectionViewFlowLayout()
         let collectionView = UICollectionView(frame: .zero, collectionViewLayout: collectionFlowLayout)
         collectionView.delegate = self
@@ -27,20 +28,36 @@ class SelectionBar: UIView,UICollectionViewDelegate,UICollectionViewDataSource,U
         return collectionView
     }()
     
-    let selectionCell = "selectionCell"
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
-        
         setUpView()
+        
+        setUpHorizontalSelection()
+        
     }
     
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
+    func setUpHorizontalSelection() {
+        
+        
+        let horizontalBarView = UIView()
+        horizontalBarView.backgroundColor = UIColor(white: 0.95, alpha: 1)
+        horizontalBarView.translatesAutoresizingMaskIntoConstraints = false
+        addSubview(horizontalBarView)
+        
+        horizontalBarLeftAnchorConstraint = horizontalBarView.leftAnchor.constraint(equalTo: self.leftAnchor)
+        horizontalBarLeftAnchorConstraint?.isActive = true
+        horizontalBarView.bottomAnchor.constraint(equalTo: self.bottomAnchor).isActive = true
+        horizontalBarView.widthAnchor.constraint(equalTo: self.widthAnchor, multiplier: 1/4).isActive = true
+        horizontalBarView.heightAnchor.constraint(equalToConstant: 4).isActive = true
+    }
+    
     
     func setUpView() {
-        
         collectioView.register(MenuCell.self, forCellWithReuseIdentifier: selectionCell)
         addSubview(collectioView)
         addConstrainsts(format: "H:|[v0]|", viewsList: collectioView)
@@ -53,9 +70,7 @@ class SelectionBar: UIView,UICollectionViewDelegate,UICollectionViewDataSource,U
         
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: selectionCell, for: indexPath) as! MenuCell
         cell.imageView.image = UIImage(named: imageNames[(indexPath as NSIndexPath).item])?.withRenderingMode(.alwaysTemplate)
-      
         cell.tintColor = UIColor.init(colorLiteralRed: 91/255, green: 14/255, blue: 13/255, alpha: 1)
-        
         return cell
         
     }
@@ -72,6 +87,19 @@ class SelectionBar: UIView,UICollectionViewDelegate,UICollectionViewDataSource,U
         return 0
     }
     
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+      //selected code
+        
+                print(indexPath.item)
+                let x = CGFloat(indexPath.item) * frame.width / 4
+                horizontalBarLeftAnchorConstraint?.constant = x
+        
+                UIView.animate(withDuration: 0.75, delay: 0, usingSpringWithDamping: 1, initialSpringVelocity: 1, options: .curveEaseOut, animations: {
+                   //what does this do  while animation
+                    self.layoutIfNeeded()
+                    }, completion: nil)
+
+    }
     
 }
 
@@ -87,6 +115,19 @@ class MenuCell : UICollectionViewCell {
         return imageView
         
     }()
+    
+    
+    override var isHighlighted: Bool {
+        didSet {
+            imageView.tintColor = isHighlighted ? UIColor.white : UIColor.rgb(91, green: 14, blue: 13)
+        }
+    }
+    
+    override var isSelected: Bool {
+        didSet {
+            imageView.tintColor = isSelected ? UIColor.white : UIColor.rgb(91, green: 14, blue: 13)
+        }
+    }
     
     override init(frame:CGRect){
         super.init(frame: frame)

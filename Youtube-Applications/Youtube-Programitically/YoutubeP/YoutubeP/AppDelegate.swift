@@ -18,10 +18,28 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window = UIWindow(frame: (UIScreen.main.bounds))
         window?.makeKeyAndVisible()
         
+    
         let flowLayout = UICollectionViewFlowLayout()
         let viewController = HomeViewController(collectionViewLayout:flowLayout)
-        
+        UINavigationBar.appearance().barTintColor  = UIColor.rgb(230, green: 32, blue: 30)
         window?.rootViewController =  UINavigationController(rootViewController: viewController)
+        UINavigationBar.appearance().barTintColor = UIColor.rgb(230, green: 32, blue: 31)
+        
+        // get rid of black bar underneath navbar
+        //if we remove it black bar move around shadow image
+        UINavigationBar.appearance().shadowImage = UIImage()
+        UINavigationBar.appearance().setBackgroundImage(UIImage(), for: .default)
+        
+        application.statusBarStyle = .lightContent
+        
+        let statusBarBackgroundView = UIView()
+        statusBarBackgroundView.backgroundColor = UIColor.rgb(194, green: 31, blue: 31)
+        window?.addSubview(statusBarBackgroundView)
+        window?.addConstrainsts(format: "H:|[v0]|", viewsList: statusBarBackgroundView)
+        window?.addConstrainsts(format: "V:|[v0(20)]", viewsList: statusBarBackgroundView)
+
+        //application.statusBarStyle = .lightContent
+        
         return true
         
     }

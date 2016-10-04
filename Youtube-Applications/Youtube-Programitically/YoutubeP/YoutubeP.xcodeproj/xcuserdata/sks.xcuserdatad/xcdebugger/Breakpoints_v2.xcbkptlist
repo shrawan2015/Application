@@ -10,54 +10,6 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "YoutubeP/ViewController.swift"
-            timestampString = "497029477.863021"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "207"
-            endingLineNumber = "207"
-            landmarkName = "addConstrainsts(format:viewsList:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "YoutubeP/ViewController.swift"
-            timestampString = "497029477.863021"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "212"
-            endingLineNumber = "212"
-            landmarkName = "addConstrainsts(format:viewsList:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "YoutubeP/SelectionBar.swift"
-            timestampString = "497029841.030474"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "68"
-            endingLineNumber = "68"
-            landmarkName = "collectionView(_:layout:sizeForItemAt:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "YoutubeP/ViewController.swift"
             timestampString = "497024393.925614"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
@@ -65,98 +17,22 @@
             endingLineNumber = "11"
             landmarkName = "HomeViewController"
             landmarkType = "3">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "YoutubeP.HomeViewController.__deallocating_deinit"
-                  moduleName = "YoutubeP"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/sks/Desktop/Applications/Youtube-Applications/Youtube-Programitically/YoutubeP/YoutubeP/ViewController.swift"
-                  timestampString = "497024444.491462"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "0"
-                  endingLineNumber = "0"
-                  offsetFromSymbolStart = "4">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "YoutubeP.HomeViewController.init (collectionViewLayout : __ObjC.UICollectionViewLayout) -&gt; YoutubeP.HomeViewController"
-                  moduleName = "YoutubeP"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/sks/Desktop/Applications/Youtube-Applications/Youtube-Programitically/YoutubeP/YoutubeP/ViewController.swift"
-                  timestampString = "497024444.498029"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "12"
-                  endingLineNumber = "12"
-                  offsetFromSymbolStart = "35">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "YoutubeP.HomeViewController.__allocating_init (collectionViewLayout : __ObjC.UICollectionViewLayout) -&gt; YoutubeP.HomeViewController"
-                  moduleName = "YoutubeP"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/sks/Desktop/Applications/Youtube-Applications/Youtube-Programitically/YoutubeP/YoutubeP/ViewController.swift"
-                  timestampString = "497024444.503016"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "0"
-                  endingLineNumber = "0"
-                  offsetFromSymbolStart = "4">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "YoutubeP.HomeViewController.__allocating_init (nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;__ObjC.Bundle&gt;) -&gt; YoutubeP.HomeViewController"
-                  moduleName = "YoutubeP"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/sks/Desktop/Applications/Youtube-Applications/Youtube-Programitically/YoutubeP/YoutubeP/ViewController.swift"
-                  timestampString = "497024444.50917"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "0"
-                  endingLineNumber = "0"
-                  offsetFromSymbolStart = "23">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "YoutubeP.HomeViewController.__allocating_init (coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;YoutubeP.HomeViewController&gt;"
-                  moduleName = "YoutubeP"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/sks/Desktop/Applications/Youtube-Applications/Youtube-Programitically/YoutubeP/YoutubeP/ViewController.swift"
-                  timestampString = "497024444.512644"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "0"
-                  endingLineNumber = "0"
-                  offsetFromSymbolStart = "4">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "YoutubeP.HomeViewController.init (coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;YoutubeP.HomeViewController&gt;"
-                  moduleName = "YoutubeP"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/sks/Desktop/Applications/Youtube-Applications/Youtube-Programitically/YoutubeP/YoutubeP/ViewController.swift"
-                  timestampString = "497024444.516128"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "12"
-                  endingLineNumber = "12"
-                  offsetFromSymbolStart = "35">
-               </Location>
-            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "YoutubeP/HomeController.swift"
+            timestampString = "497213853.437622"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "95"
+            endingLineNumber = "95"
+            landmarkName = "collectionView(_:numberOfItemsInSection:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
