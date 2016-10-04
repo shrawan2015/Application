@@ -8,10 +8,8 @@
 
 import UIKit
 
-class CustomCell : UICollectionViewCell {
-   
-    
-    
+
+class BaseCell :UICollectionViewCell {
     
     
     
@@ -19,6 +17,22 @@ class CustomCell : UICollectionViewCell {
         super.init(frame: frame)
         setUpView()
     }
+    
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
+     func setUpView() {
+        
+    }
+    
+    }
+
+
+
+class CustomCell : BaseCell {
+   
+    
     
     
     
@@ -94,7 +108,7 @@ class CustomCell : UICollectionViewCell {
     }()
     
     
-    func setUpView()  {
+    override func setUpView()  {
         
         addSubview(imageView)
         addSubview(boarderLine)
@@ -141,12 +155,7 @@ class CustomCell : UICollectionViewCell {
         //inititate views
     }
     
-    
-    
-    required init?(coder aDecoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
-    
+  
 //    func setupProfileImage() {
 //        if let profileImageUrl = video?.channel?.profileImageName {
 //            userProfileImageView.loadImageUsingUrlString(profileImageUrl)

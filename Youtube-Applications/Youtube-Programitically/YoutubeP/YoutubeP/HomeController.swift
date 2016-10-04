@@ -68,7 +68,9 @@ class HomeViewController: UICollectionViewController,UICollectionViewDelegateFlo
         
         //collectionView?.register(CustomCell.self, forCellWithReuseIdentifier: cellIdentifier )  //vodeo cell
         
-        collectionView?.register(UICollectionViewCell.self, forCellWithReuseIdentifier: cellID)
+//        collectionView?.register(UICollectionViewCell.self, forCellWithReuseIdentifier: cellID)
+                collectionView?.register(FeedCell.self, forCellWithReuseIdentifier: cellID)
+
         
         self.navigationController?.navigationBar.backgroundColor = .blue
         collectionView?.backgroundColor = .white
@@ -118,9 +120,9 @@ class HomeViewController: UICollectionViewController,UICollectionViewDelegateFlo
     
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let customcell = collectionView.dequeueReusableCell(withReuseIdentifier: cellID, for: indexPath)
-      
-        let cellcolorArray : [UIColor] = [.red,.blue,.green, .black]
-        customcell.backgroundColor = cellcolorArray[indexPath.row]
+//      
+//        let cellcolorArray : [UIColor] = [.red,.blue,.green, .black]
+//        customcell.backgroundColor = cellcolorArray[indexPath.row]
         return customcell
     }
     
