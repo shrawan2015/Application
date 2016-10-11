@@ -1,9 +1,9 @@
 //
 //  AppDelegate.swift
-//  YoutubeP
+//  Audible
 //
-//  Created by SKS on 30/09/16.
-//  Copyright © 2016 Youtube-Programatic. All rights reserved.
+//  Created by SKS on 11/10/16.
+//  Copyright © 2016 Audible. All rights reserved.
 //
 
 import UIKit
@@ -15,33 +15,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        
-        
-        window = UIWindow(frame: (UIScreen.main.bounds))
-        window?.makeKeyAndVisible()
-        let flowLayout = UICollectionViewFlowLayout()
-        let viewController = HomeViewController(collectionViewLayout:flowLayout)
-        UINavigationBar.appearance().barTintColor  = UIColor.rgb(230, green: 32, blue: 30)
-        window?.rootViewController =  UINavigationController(rootViewController: viewController)
-        UINavigationBar.appearance().barTintColor = UIColor.rgb(230, green: 32, blue: 31)
-        
-        // get rid of black bar underneath navbar
-        //if we remove it black bar move around shadow image
-        UINavigationBar.appearance().shadowImage = UIImage()
-        UINavigationBar.appearance().setBackgroundImage(UIImage(), for: .default)
-        
-        application.statusBarStyle = .lightContent
-        
-        let statusBarBackgroundView = UIView()
-        statusBarBackgroundView.backgroundColor = UIColor.rgb(194, green: 31, blue: 31)
-        window?.addSubview(statusBarBackgroundView)
-        window?.addConstrainsts(format: "H:|[v0]|", viewsList: statusBarBackgroundView)
-        window?.addConstrainsts(format: "V:|[v0(20)]", viewsList: statusBarBackgroundView)
-
-        //application.statusBarStyle = .lightContent
-        
+        // Override point for customization after application launch.
         return true
-        
     }
 
     func applicationWillResignActive(_ application: UIApplication) {

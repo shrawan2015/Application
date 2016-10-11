@@ -32,7 +32,7 @@ class HomeViewController: UICollectionViewController,UICollectionViewDelegateFlo
 //        sampleVideo.thumbNailImage = "taylor_swift_profile"
 //        sampleVideo.channel = keyChnael
 //       return [sampleVideo]
-//    }()
+//    }() 
 //    
     
     
@@ -148,6 +148,9 @@ class HomeViewController: UICollectionViewController,UICollectionViewDelegateFlo
 //        let indexPath = NSIndexPath(forItem: Int(index), inSection: 0)
         let indexPath = IndexPath(item: Int(index), section: 0)
 //        menuBar.collectionView.selectItemAtIndexPath(indexPath, animated: true, scrollPosition: .None)
+        
+        
+        //DRAGGING VIA CACHING
         menuBar.collectioView.selectItem(at: indexPath, animated: true, scrollPosition: [])
         
     }

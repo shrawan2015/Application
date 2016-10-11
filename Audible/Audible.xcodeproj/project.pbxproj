@@ -1,0 +1,532 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1B8595771DAD226F00E22AB3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B8595761DAD226F00E22AB3 /* AppDelegate.swift */; };
+		1B8595791DAD226F00E22AB3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B8595781DAD226F00E22AB3 /* ViewController.swift */; };
+		1B85957C1DAD227000E22AB3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B85957A1DAD227000E22AB3 /* Main.storyboard */; };
+		1B85957E1DAD227000E22AB3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B85957D1DAD227000E22AB3 /* Assets.xcassets */; };
+		1B8595811DAD227000E22AB3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B85957F1DAD227000E22AB3 /* LaunchScreen.storyboard */; };
+		1B85958C1DAD227100E22AB3 /* AudibleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B85958B1DAD227100E22AB3 /* AudibleTests.swift */; };
+		1B8595971DAD227100E22AB3 /* AudibleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B8595961DAD227100E22AB3 /* AudibleUITests.swift */; };
+		1B8595A51DAD2B6600E22AB3 /* PageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B8595A41DAD2B6600E22AB3 /* PageCell.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1B8595881DAD227100E22AB3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1B85956B1DAD226F00E22AB3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1B8595721DAD226F00E22AB3;
+			remoteInfo = Audible;
+		};
+		1B8595931DAD227100E22AB3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1B85956B1DAD226F00E22AB3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1B8595721DAD226F00E22AB3;
+			remoteInfo = Audible;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1B8595731DAD226F00E22AB3 /* Audible.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Audible.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1B8595761DAD226F00E22AB3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1B8595781DAD226F00E22AB3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1B85957B1DAD227000E22AB3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1B85957D1DAD227000E22AB3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1B8595801DAD227000E22AB3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1B8595821DAD227000E22AB3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1B8595871DAD227100E22AB3 /* AudibleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AudibleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1B85958B1DAD227100E22AB3 /* AudibleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudibleTests.swift; sourceTree = "<group>"; };
+		1B85958D1DAD227100E22AB3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1B8595921DAD227100E22AB3 /* AudibleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AudibleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1B8595961DAD227100E22AB3 /* AudibleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudibleUITests.swift; sourceTree = "<group>"; };
+		1B8595981DAD227100E22AB3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1B8595A41DAD2B6600E22AB3 /* PageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageCell.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1B8595701DAD226F00E22AB3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1B8595841DAD227100E22AB3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1B85958F1DAD227100E22AB3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1B85956A1DAD226E00E22AB3 = {
+			isa = PBXGroup;
+			children = (
+				1B8595751DAD226F00E22AB3 /* Audible */,
+				1B85958A1DAD227100E22AB3 /* AudibleTests */,
+				1B8595951DAD227100E22AB3 /* AudibleUITests */,
+				1B8595741DAD226F00E22AB3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1B8595741DAD226F00E22AB3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1B8595731DAD226F00E22AB3 /* Audible.app */,
+				1B8595871DAD227100E22AB3 /* AudibleTests.xctest */,
+				1B8595921DAD227100E22AB3 /* AudibleUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1B8595751DAD226F00E22AB3 /* Audible */ = {
+			isa = PBXGroup;
+			children = (
+				1B8595761DAD226F00E22AB3 /* AppDelegate.swift */,
+				1B8595781DAD226F00E22AB3 /* ViewController.swift */,
+				1B85957A1DAD227000E22AB3 /* Main.storyboard */,
+				1B85957D1DAD227000E22AB3 /* Assets.xcassets */,
+				1B85957F1DAD227000E22AB3 /* LaunchScreen.storyboard */,
+				1B8595821DAD227000E22AB3 /* Info.plist */,
+				1B8595A41DAD2B6600E22AB3 /* PageCell.swift */,
+			);
+			path = Audible;
+			sourceTree = "<group>";
+		};
+		1B85958A1DAD227100E22AB3 /* AudibleTests */ = {
+			isa = PBXGroup;
+			children = (
+				1B85958B1DAD227100E22AB3 /* AudibleTests.swift */,
+				1B85958D1DAD227100E22AB3 /* Info.plist */,
+			);
+			path = AudibleTests;
+			sourceTree = "<group>";
+		};
+		1B8595951DAD227100E22AB3 /* AudibleUITests */ = {
+			isa = PBXGroup;
+			children = (
+				1B8595961DAD227100E22AB3 /* AudibleUITests.swift */,
+				1B8595981DAD227100E22AB3 /* Info.plist */,
+			);
+			path = AudibleUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1B8595721DAD226F00E22AB3 /* Audible */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1B85959B1DAD227100E22AB3 /* Build configuration list for PBXNativeTarget "Audible" */;
+			buildPhases = (
+				1B85956F1DAD226F00E22AB3 /* Sources */,
+				1B8595701DAD226F00E22AB3 /* Frameworks */,
+				1B8595711DAD226F00E22AB3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Audible;
+			productName = Audible;
+			productReference = 1B8595731DAD226F00E22AB3 /* Audible.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1B8595861DAD227100E22AB3 /* AudibleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1B85959E1DAD227100E22AB3 /* Build configuration list for PBXNativeTarget "AudibleTests" */;
+			buildPhases = (
+				1B8595831DAD227100E22AB3 /* Sources */,
+				1B8595841DAD227100E22AB3 /* Frameworks */,
+				1B8595851DAD227100E22AB3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1B8595891DAD227100E22AB3 /* PBXTargetDependency */,
+			);
+			name = AudibleTests;
+			productName = AudibleTests;
+			productReference = 1B8595871DAD227100E22AB3 /* AudibleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		1B8595911DAD227100E22AB3 /* AudibleUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1B8595A11DAD227100E22AB3 /* Build configuration list for PBXNativeTarget "AudibleUITests" */;
+			buildPhases = (
+				1B85958E1DAD227100E22AB3 /* Sources */,
+				1B85958F1DAD227100E22AB3 /* Frameworks */,
+				1B8595901DAD227100E22AB3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1B8595941DAD227100E22AB3 /* PBXTargetDependency */,
+			);
+			name = AudibleUITests;
+			productName = AudibleUITests;
+			productReference = 1B8595921DAD227100E22AB3 /* AudibleUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1B85956B1DAD226F00E22AB3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0800;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = Audible;
+				TargetAttributes = {
+					1B8595721DAD226F00E22AB3 = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+					};
+					1B8595861DAD227100E22AB3 = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 1B8595721DAD226F00E22AB3;
+					};
+					1B8595911DAD227100E22AB3 = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 1B8595721DAD226F00E22AB3;
+					};
+				};
+			};
+			buildConfigurationList = 1B85956E1DAD226F00E22AB3 /* Build configuration list for PBXProject "Audible" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1B85956A1DAD226E00E22AB3;
+			productRefGroup = 1B8595741DAD226F00E22AB3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1B8595721DAD226F00E22AB3 /* Audible */,
+				1B8595861DAD227100E22AB3 /* AudibleTests */,
+				1B8595911DAD227100E22AB3 /* AudibleUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1B8595711DAD226F00E22AB3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1B8595811DAD227000E22AB3 /* LaunchScreen.storyboard in Resources */,
+				1B85957E1DAD227000E22AB3 /* Assets.xcassets in Resources */,
+				1B85957C1DAD227000E22AB3 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1B8595851DAD227100E22AB3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1B8595901DAD227100E22AB3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1B85956F1DAD226F00E22AB3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1B8595791DAD226F00E22AB3 /* ViewController.swift in Sources */,
+				1B8595771DAD226F00E22AB3 /* AppDelegate.swift in Sources */,
+				1B8595A51DAD2B6600E22AB3 /* PageCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1B8595831DAD227100E22AB3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1B85958C1DAD227100E22AB3 /* AudibleTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1B85958E1DAD227100E22AB3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1B8595971DAD227100E22AB3 /* AudibleUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1B8595891DAD227100E22AB3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1B8595721DAD226F00E22AB3 /* Audible */;
+			targetProxy = 1B8595881DAD227100E22AB3 /* PBXContainerItemProxy */;
+		};
+		1B8595941DAD227100E22AB3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1B8595721DAD226F00E22AB3 /* Audible */;
+			targetProxy = 1B8595931DAD227100E22AB3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1B85957A1DAD227000E22AB3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1B85957B1DAD227000E22AB3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1B85957F1DAD227000E22AB3 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1B8595801DAD227000E22AB3 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1B8595991DAD227100E22AB3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1B85959A1DAD227100E22AB3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1B85959C1DAD227100E22AB3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Audible/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Audible.Audible;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		1B85959D1DAD227100E22AB3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Audible/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Audible.Audible;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		1B85959F1DAD227100E22AB3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = AudibleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Audible.AudibleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Audible.app/Audible";
+			};
+			name = Debug;
+		};
+		1B8595A01DAD227100E22AB3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = AudibleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Audible.AudibleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Audible.app/Audible";
+			};
+			name = Release;
+		};
+		1B8595A21DAD227100E22AB3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = AudibleUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Audible.AudibleUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = Audible;
+			};
+			name = Debug;
+		};
+		1B8595A31DAD227100E22AB3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = AudibleUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Audible.AudibleUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = Audible;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1B85956E1DAD226F00E22AB3 /* Build configuration list for PBXProject "Audible" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1B8595991DAD227100E22AB3 /* Debug */,
+				1B85959A1DAD227100E22AB3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1B85959B1DAD227100E22AB3 /* Build configuration list for PBXNativeTarget "Audible" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1B85959C1DAD227100E22AB3 /* Debug */,
+				1B85959D1DAD227100E22AB3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		1B85959E1DAD227100E22AB3 /* Build configuration list for PBXNativeTarget "AudibleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1B85959F1DAD227100E22AB3 /* Debug */,
+				1B8595A01DAD227100E22AB3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		1B8595A11DAD227100E22AB3 /* Build configuration list for PBXNativeTarget "AudibleUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1B8595A21DAD227100E22AB3 /* Debug */,
+				1B8595A31DAD227100E22AB3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1B85956B1DAD226F00E22AB3 /* Project object */;
+}
