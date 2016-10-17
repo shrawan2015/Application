@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1B780A8D1DAD71D6007891C4 /* LoginCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B780A8C1DAD71D6007891C4 /* LoginCell.swift */; };
 		1B8595771DAD226F00E22AB3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B8595761DAD226F00E22AB3 /* AppDelegate.swift */; };
 		1B8595791DAD226F00E22AB3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B8595781DAD226F00E22AB3 /* ViewController.swift */; };
 		1B85957C1DAD227000E22AB3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B85957A1DAD227000E22AB3 /* Main.storyboard */; };
@@ -15,6 +16,8 @@
 		1B85958C1DAD227100E22AB3 /* AudibleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B85958B1DAD227100E22AB3 /* AudibleTests.swift */; };
 		1B8595971DAD227100E22AB3 /* AudibleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B8595961DAD227100E22AB3 /* AudibleUITests.swift */; };
 		1B8595A51DAD2B6600E22AB3 /* PageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B8595A41DAD2B6600E22AB3 /* PageCell.swift */; };
+		1B8595A71DAD2D6800E22AB3 /* page1@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1B8595A61DAD2D6800E22AB3 /* page1@2x.jpg */; };
+		1B8595A91DAD578000E22AB3 /* Page.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B8595A81DAD578000E22AB3 /* Page.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1B780A8C1DAD71D6007891C4 /* LoginCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginCell.swift; sourceTree = "<group>"; };
 		1B8595731DAD226F00E22AB3 /* Audible.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Audible.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B8595761DAD226F00E22AB3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1B8595781DAD226F00E22AB3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -49,6 +53,8 @@
 		1B8595961DAD227100E22AB3 /* AudibleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudibleUITests.swift; sourceTree = "<group>"; };
 		1B8595981DAD227100E22AB3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1B8595A41DAD2B6600E22AB3 /* PageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageCell.swift; sourceTree = "<group>"; };
+		1B8595A61DAD2D6800E22AB3 /* page1@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "page1@2x.jpg"; sourceTree = "<group>"; };
+		1B8595A81DAD578000E22AB3 /* Page.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Page.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,7 +111,10 @@
 				1B85957D1DAD227000E22AB3 /* Assets.xcassets */,
 				1B85957F1DAD227000E22AB3 /* LaunchScreen.storyboard */,
 				1B8595821DAD227000E22AB3 /* Info.plist */,
+				1B8595A61DAD2D6800E22AB3 /* page1@2x.jpg */,
 				1B8595A41DAD2B6600E22AB3 /* PageCell.swift */,
+				1B8595A81DAD578000E22AB3 /* Page.swift */,
+				1B780A8C1DAD71D6007891C4 /* LoginCell.swift */,
 			);
 			path = Audible;
 			sourceTree = "<group>";
@@ -238,6 +247,7 @@
 				1B8595811DAD227000E22AB3 /* LaunchScreen.storyboard in Resources */,
 				1B85957E1DAD227000E22AB3 /* Assets.xcassets in Resources */,
 				1B85957C1DAD227000E22AB3 /* Main.storyboard in Resources */,
+				1B8595A71DAD2D6800E22AB3 /* page1@2x.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,6 +274,8 @@
 			files = (
 				1B8595791DAD226F00E22AB3 /* ViewController.swift in Sources */,
 				1B8595771DAD226F00E22AB3 /* AppDelegate.swift in Sources */,
+				1B780A8D1DAD71D6007891C4 /* LoginCell.swift in Sources */,
+				1B8595A91DAD578000E22AB3 /* Page.swift in Sources */,
 				1B8595A51DAD2B6600E22AB3 /* PageCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -509,6 +521,7 @@
 				1B85959D1DAD227100E22AB3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1B85959E1DAD227100E22AB3 /* Build configuration list for PBXNativeTarget "AudibleTests" */ = {
 			isa = XCConfigurationList;
@@ -517,6 +530,7 @@
 				1B8595A01DAD227100E22AB3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1B8595A11DAD227100E22AB3 /* Build configuration list for PBXNativeTarget "AudibleUITests" */ = {
 			isa = XCConfigurationList;
@@ -525,6 +539,7 @@
 				1B8595A31DAD227100E22AB3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
