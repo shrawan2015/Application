@@ -7,8 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1B8A95781DB685CA0039DD35 /* CustomTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B8A95771DB685CA0039DD35 /* CustomTabBar.swift */; };
+		1B8A957B1DB687DF0039DD35 /* View+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B8A957A1DB687DF0039DD35 /* View+Extension.swift */; };
 		1BF716591DB5367A007E404A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BF716581DB5367A007E404A /* AppDelegate.swift */; };
-		1BF7165B1DB5367A007E404A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BF7165A1DB5367A007E404A /* ViewController.swift */; };
+		1BF7165B1DB5367A007E404A /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BF7165A1DB5367A007E404A /* HomeController.swift */; };
 		1BF716611DB5367B007E404A /* whatsApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1BF7165F1DB5367B007E404A /* whatsApp.xcdatamodeld */; };
 		1BF716631DB5367B007E404A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1BF716621DB5367B007E404A /* Assets.xcassets */; };
 		1BF716661DB5367B007E404A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BF716641DB5367B007E404A /* LaunchScreen.storyboard */; };
@@ -34,9 +36,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1B8A95771DB685CA0039DD35 /* CustomTabBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTabBar.swift; sourceTree = "<group>"; };
+		1B8A957A1DB687DF0039DD35 /* View+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "View+Extension.swift"; sourceTree = "<group>"; };
 		1BF716551DB5367A007E404A /* whatsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = whatsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1BF716581DB5367A007E404A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1BF7165A1DB5367A007E404A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1BF7165A1DB5367A007E404A /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
 		1BF716601DB5367B007E404A /* whatsApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = whatsApp.xcdatamodel; sourceTree = "<group>"; };
 		1BF716621DB5367B007E404A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1BF716651DB5367B007E404A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -74,6 +78,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1B8A95791DB687BA0039DD35 /* HelperExtension */ = {
+			isa = PBXGroup;
+			children = (
+				1B8A957A1DB687DF0039DD35 /* View+Extension.swift */,
+			);
+			name = HelperExtension;
+			sourceTree = "<group>";
+		};
 		1BF7164C1DB5367A007E404A = {
 			isa = PBXGroup;
 			children = (
@@ -97,12 +109,14 @@
 		1BF716571DB5367A007E404A /* WhatsApp */ = {
 			isa = PBXGroup;
 			children = (
+				1B8A95791DB687BA0039DD35 /* HelperExtension */,
 				1BF716581DB5367A007E404A /* AppDelegate.swift */,
-				1BF7165A1DB5367A007E404A /* ViewController.swift */,
+				1BF7165A1DB5367A007E404A /* HomeController.swift */,
+				1BF7165F1DB5367B007E404A /* whatsApp.xcdatamodeld */,
+				1B8A95771DB685CA0039DD35 /* CustomTabBar.swift */,
 				1BF716621DB5367B007E404A /* Assets.xcassets */,
 				1BF716641DB5367B007E404A /* LaunchScreen.storyboard */,
 				1BF716671DB5367B007E404A /* Info.plist */,
-				1BF7165F1DB5367B007E404A /* whatsApp.xcdatamodeld */,
 			);
 			name = WhatsApp;
 			path = whatsApp;
@@ -259,8 +273,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B8A95781DB685CA0039DD35 /* CustomTabBar.swift in Sources */,
 				1BF716611DB5367B007E404A /* whatsApp.xcdatamodeld in Sources */,
-				1BF7165B1DB5367A007E404A /* ViewController.swift in Sources */,
+				1B8A957B1DB687DF0039DD35 /* View+Extension.swift in Sources */,
+				1BF7165B1DB5367A007E404A /* HomeController.swift in Sources */,
 				1BF716591DB5367A007E404A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -498,6 +514,7 @@
 				1BF716821DB5367B007E404A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1BF716831DB5367B007E404A /* Build configuration list for PBXNativeTarget "whatsAppTests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +523,7 @@
 				1BF716851DB5367B007E404A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1BF716861DB5367B007E404A /* Build configuration list for PBXNativeTarget "whatsAppUITests" */ = {
 			isa = XCConfigurationList;
@@ -514,6 +532,7 @@
 				1BF716881DB5367B007E404A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

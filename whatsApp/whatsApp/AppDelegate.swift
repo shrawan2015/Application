@@ -24,6 +24,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func initilizeWindow() {
         window = UIWindow(frame:UIScreen.main.bounds)
+        window?.makeKeyAndVisible()
+        
         let flowLayout = UICollectionViewFlowLayout()
         let homeController = HomeController(collectionViewLayout: flowLayout)
         window?.rootViewController = UINavigationController(rootViewController: homeController)
