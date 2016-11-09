@@ -28,6 +28,10 @@ class CustomTabBar:UIView,UICollectionViewDataSource,UICollectionViewDelegate,UI
         collectionView.register(UICollectionViewCell.self, forCellWithReuseIdentifier:cellID )
         addSubview(collectionView)
         collectionView.translatesAutoresizingMaskIntoConstraints = false
+        addConstraintsWithFormat("H:|[v0]|", views: collectionView)
+        addConstraintsWithFormat("V:|[v0]|", views: collectionView)
+
+        
 
     }
     

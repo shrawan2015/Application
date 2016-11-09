@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>Airbnb.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>0</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>1B7319D61DD0DD7500C2E29C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>1B7319ED1DD0DD7600C2E29C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>1B7319F81DD0DD7600C2E29C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>
