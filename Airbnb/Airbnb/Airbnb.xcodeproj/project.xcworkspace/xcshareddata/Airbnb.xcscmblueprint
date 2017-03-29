@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "155A3A8F9F31C3DBF1AC8D44C00DFC9BE85983B2",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "655FDC7AA9F86B3237834C73871AAB1BE23F8F28" : 9223372036854775807,
+    "155A3A8F9F31C3DBF1AC8D44C00DFC9BE85983B2" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "6BAAD55C-8FBC-49AC-94D0-3B09DC9635D3",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "655FDC7AA9F86B3237834C73871AAB1BE23F8F28" : "",
+    "155A3A8F9F31C3DBF1AC8D44C00DFC9BE85983B2" : "Airbnb\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Airbnb",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Airbnb\/Airbnb.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/shrawan2015\/Airbnb.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "155A3A8F9F31C3DBF1AC8D44C00DFC9BE85983B2"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/shrawan2015\/Application.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "655FDC7AA9F86B3237834C73871AAB1BE23F8F28"
+    }
+  ]
+}

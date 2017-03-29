@@ -8,18 +8,44 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-
+class ViewController: UIViewController,ChangeColor {
+    
+    @IBOutlet weak var loginButton: UIButton!
+    @IBOutlet weak var signUpButton: UIButton!
+    var color:UIColor?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
-
-
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "sideMenu" {
+            let containerViewController = segue.destination as! SlideViewController
+            containerViewController.delegate = self
+            
+            }
+    }
+    
+    func changeColor(number: Int) {
+        switch number {
+        case 0:
+            color = .red
+            break
+        case 1:
+            color = .blue
+        case 2:
+            color = .green
+        default:
+            color = .yellow
+        }
+        
+        loginButton.backgroundColor = color
+        signUpButton.backgroundColor = color
+    }
+    
 }
 
