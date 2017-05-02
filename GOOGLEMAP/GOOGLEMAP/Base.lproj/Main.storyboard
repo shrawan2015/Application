@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="GOOGLEMAP" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="xch-KK-VtD">
+                                <rect key="frame" x="0.0" y="20" width="375" height="300"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="a0R-6c-FCZ"/>
+                                </constraints>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="myawsemoecell" id="xOV-sI-4wz" customClass="NewTableVIEWTableViewCell" customModule="GOOGLEMAP" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="xOV-sI-4wz" id="saL-1a-90x">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <sections/>
+                            </tableView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7Z1-2v-suP" customClass="GMSMapView">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <subviews>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KFU-P3-F2C">
+                                        <rect key="frame" x="24" y="424" width="327" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="lCV-co-hVX"/>
+                                        </constraints>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                                <color key="backgroundColor" red="0.18039215689999999" green="0.7725490196" blue="0.5450980392" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="KFU-P3-F2C" secondAttribute="bottom" constant="193" id="7ey-hV-weZ"/>
+                                    <constraint firstItem="KFU-P3-F2C" firstAttribute="leading" secondItem="7Z1-2v-suP" secondAttribute="leading" id="F9a-s7-QLS"/>
+                                    <constraint firstAttribute="trailing" secondItem="KFU-P3-F2C" secondAttribute="trailing" id="LRu-ki-Q5l"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="7Z1-2v-suP" secondAttribute="trailing" id="4o2-tb-RiJ"/>
+                            <constraint firstItem="xch-KK-VtD" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="9CU-z3-MpD"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="7Z1-2v-suP" secondAttribute="bottom" id="HZB-NQ-dfb"/>
+                            <constraint firstAttribute="trailing" secondItem="xch-KK-VtD" secondAttribute="trailing" id="IXD-ze-HS7"/>
+                            <constraint firstItem="xch-KK-VtD" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="VvM-mX-u5I"/>
+                            <constraint firstItem="7Z1-2v-suP" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Zws-a4-0PR"/>
+                            <constraint firstItem="7Z1-2v-suP" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="aaO-Bb-tke"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="mapView" destination="7Z1-2v-suP" id="ItE-l8-da9"/>
+                        <outlet property="searchDisplayController" destination="ucs-MM-rZr" id="Evt-At-Zqk"/>
+                        <outlet property="tableView" destination="xch-KK-VtD" id="RZt-5D-cUN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <searchDisplayController id="ucs-MM-rZr">
+                    <connections>
+                        <outlet property="delegate" destination="BYZ-38-t0r" id="gLh-tl-MQO"/>
+                        <outlet property="searchContentsController" destination="BYZ-38-t0r" id="l10-1D-0hS"/>
+                        <outlet property="searchResultsDataSource" destination="BYZ-38-t0r" id="6AM-nj-SI5"/>
+                        <outlet property="searchResultsDelegate" destination="BYZ-38-t0r" id="7UI-Eg-PlD"/>
+                    </connections>
+                </searchDisplayController>
+            </objects>
+            <point key="canvasLocation" x="40.799999999999997" y="86.806596701649184"/>
+        </scene>
+    </scenes>
+</document>

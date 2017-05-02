@@ -1,0 +1,3 @@
+target 'GOOGLEMAP'do
+pod 'GoogleMaps'
+end

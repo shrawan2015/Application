@@ -1,0 +1,6 @@
+framework module Pods_IQKeyboardManagerSwiftdemo {
+  umbrella header "Pods-IQKeyboardManagerSwiftdemo-umbrella.h"
+
+  export *
+  module * { export * }
+}

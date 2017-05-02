@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="DemoMVC" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter Here" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WCB-58-HGl">
+                                <rect key="frame" x="20" y="40" width="335" height="46"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="WCB-58-HGl" secondAttribute="height" multiplier="73:10" id="vXH-fI-8pt"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="MsC-aX-Vgv"/>
+                                </connections>
+                            </textField>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="50" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="FP8-Hp-ppH">
+                                <rect key="frame" x="20" y="87" width="335" height="200"/>
+                                <color key="backgroundColor" red="0.86666666670000003" green="0.87843137250000003" blue="0.88235294119999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="e0m-qH-e0x"/>
+                                </constraints>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="50" id="Ud9-W6-dtT">
+                                        <rect key="frame" x="0.0" y="28" width="335" height="50"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Ud9-W6-dtT" id="maL-DV-dAV">
+                                            <rect key="frame" x="0.0" y="0.0" width="335" height="50"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </tableViewCell>
+                                </prototypes>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="layer.borderWidth" value="1"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="layer.borderColor">
+                                        <color key="value" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="jJ3-wZ-9dS"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="oUX-2c-4KH"/>
+                                </connections>
+                            </tableView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kY8-Of-ary">
+                                <rect key="frame" x="30" y="86" width="315" height="1"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="5P7-il-Pgg"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RwS-59-3Cb" customClass="GMSMapView">
+                                <rect key="frame" x="16" y="467" width="343" height="200"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="dS2-Qb-URJ"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="RwS-59-3Cb" secondAttribute="trailing" id="1nJ-60-GtN"/>
+                            <constraint firstItem="kY8-Of-ary" firstAttribute="leading" secondItem="WCB-58-HGl" secondAttribute="leading" constant="10" id="49k-6a-Ykp"/>
+                            <constraint firstItem="RwS-59-3Cb" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="7ok-ay-Xmn"/>
+                            <constraint firstItem="WCB-58-HGl" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="9xP-ye-Hoq"/>
+                            <constraint firstItem="FP8-Hp-ppH" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="IS0-ld-HPH"/>
+                            <constraint firstAttribute="trailing" secondItem="FP8-Hp-ppH" secondAttribute="trailing" constant="20" id="SYv-Yl-zhM"/>
+                            <constraint firstItem="kY8-Of-ary" firstAttribute="top" secondItem="WCB-58-HGl" secondAttribute="bottom" id="YWj-fn-gul"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="RwS-59-3Cb" secondAttribute="bottom" id="cM8-lx-7rB"/>
+                            <constraint firstAttribute="trailing" secondItem="WCB-58-HGl" secondAttribute="trailing" constant="20" id="fSh-bm-Cod"/>
+                            <constraint firstItem="WCB-58-HGl" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="ikx-My-lnG"/>
+                            <constraint firstItem="kY8-Of-ary" firstAttribute="trailing" secondItem="WCB-58-HGl" secondAttribute="trailing" constant="-10" id="jUY-ab-6Qh"/>
+                            <constraint firstItem="FP8-Hp-ppH" firstAttribute="top" secondItem="WCB-58-HGl" secondAttribute="bottom" constant="1" id="sKz-Nd-dcR"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="dropDowwnTable" destination="FP8-Hp-ppH" id="DmN-Ni-g5i"/>
+                        <outlet property="mapView" destination="RwS-59-3Cb" id="MWI-4T-b7B"/>
+                        <outlet property="txtSearch" destination="WCB-58-HGl" id="Ecb-O3-Gc3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="122.78860569715144"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,51 @@
+PODS:
+  - Alamofire (4.4.0)
+  - DLRadioButton (1.4.9)
+  - expanding-collection (1.0.4)
+  - FSCalendar (2.7.4)
+  - GoogleMaps (2.2.0):
+    - GoogleMaps/Maps (= 2.2.0)
+  - GoogleMaps/Base (2.2.0)
+  - GoogleMaps/Maps (2.2.0):
+    - GoogleMaps/Base
+  - HMSegmentedControl (1.5.3)
+  - IQKeyboardManagerSwift (4.0.9)
+  - MBProgressHUD (1.0.0)
+  - MXPagerView (0.2.1)
+  - MXParallaxHeader (0.6.1)
+  - MXSegmentedPager (3.2.2):
+    - HMSegmentedControl (= 1.5.3)
+    - MXPagerView (= 0.2.1)
+    - MXParallaxHeader (= 0.6.1)
+  - SDWebImage (4.0.0):
+    - SDWebImage/Core (= 4.0.0)
+  - SDWebImage/Core (4.0.0)
+
+DEPENDENCIES:
+  - Alamofire
+  - DLRadioButton (~> 1.4)
+  - expanding-collection
+  - FSCalendar
+  - GoogleMaps
+  - IQKeyboardManagerSwift
+  - MBProgressHUD
+  - MXSegmentedPager
+  - SDWebImage
+
+SPEC CHECKSUMS:
+  Alamofire: dc44b1600b800eb63da6a19039a0083d62a6a62d
+  DLRadioButton: 7bb8a6e3768b572469ace553391ab4d2af6f9c19
+  expanding-collection: be78b5822d7382d3da02b52d52273f4661567a64
+  FSCalendar: e95995a746acae531c4a7dd636b8393233125ec5
+  GoogleMaps: 104c418d61ab8a05dff06ed0784c25ea9d37da45
+  HMSegmentedControl: 7c6145afb50f26cec5f3243082f6f12b9f41318f
+  IQKeyboardManagerSwift: 2eefe6c429b86aa08bfbc1b5c891164d754adf91
+  MBProgressHUD: 4890f671c94e8a0f3cf959aa731e9de2f036d71a
+  MXPagerView: ede184b5191b2ed689ccf05a750a9978cce42414
+  MXParallaxHeader: 858c403532ed933b381556a81ce333d7065ad182
+  MXSegmentedPager: e15df1e335bdc9d86c39eee1e6b5f7ef1a22d7c3
+  SDWebImage: 76a6348bdc74eb5a55dd08a091ef298e56b55e41
+
+PODFILE CHECKSUM: 7f83c44565072c0337b84c285bfa20428b171042
+
+COCOAPODS: 1.0.1
