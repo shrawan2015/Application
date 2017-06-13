@@ -1,0 +1,21 @@
+PODS:
+  - PageMenu (1.2.9)
+
+DEPENDENCIES:
+  - PageMenu (from `https://github.com/orazz/PageMenu`)
+
+EXTERNAL SOURCES:
+  PageMenu:
+    :git: https://github.com/orazz/PageMenu
+
+CHECKOUT OPTIONS:
+  PageMenu:
+    :commit: ace3d8d095c9c165113d3ac797f317fe7faecbae
+    :git: https://github.com/orazz/PageMenu
+
+SPEC CHECKSUMS:
+  PageMenu: ba19ff267f7a19e444e93c20a7847b78954a7011
+
+PODFILE CHECKSUM: 9a7f0aae6801c3438ee0c3f5d49818035c9e3280
+
+COCOAPODS: 1.0.1

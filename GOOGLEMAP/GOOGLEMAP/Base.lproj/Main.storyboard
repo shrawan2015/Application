@@ -27,6 +27,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="300" id="a0R-6c-FCZ"/>
                                 </constraints>
+                                <color key="sectionIndexBackgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="myawsemoecell" id="xOV-sI-4wz" customClass="NewTableVIEWTableViewCell" customModule="GOOGLEMAP" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="44"/>

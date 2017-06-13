@@ -1,0 +1,26 @@
+PODS:
+  - PageMenu (1.2.9)
+  - SDWebImage (4.0.0):
+    - SDWebImage/Core (= 4.0.0)
+  - SDWebImage/Core (4.0.0)
+
+DEPENDENCIES:
+  - PageMenu (from `https://github.com/orazz/PageMenu`)
+  - SDWebImage
+
+EXTERNAL SOURCES:
+  PageMenu:
+    :git: https://github.com/orazz/PageMenu
+
+CHECKOUT OPTIONS:
+  PageMenu:
+    :commit: ace3d8d095c9c165113d3ac797f317fe7faecbae
+    :git: https://github.com/orazz/PageMenu
+
+SPEC CHECKSUMS:
+  PageMenu: ba19ff267f7a19e444e93c20a7847b78954a7011
+  SDWebImage: 76a6348bdc74eb5a55dd08a091ef298e56b55e41
+
+PODFILE CHECKSUM: b4be8905844870135fab710c5e48c6fbfa2cf327
+
+COCOAPODS: 1.0.1

@@ -1,0 +1,11 @@
+
+target 'GoogleMapExample' do 
+use_frameworks!
+pod 'Toast'
+pod 'GooglePlaces'
+pod 'Alamofire'
+pod 'GoogleMaps'
+
+
+end
+

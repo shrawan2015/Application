@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CustomCollectionViewCell" id="gTV-IL-0wX" customClass="CustomCollectionViewCell" customModule="PrepareForReuse_CollectionView" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="285" height="143"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="285" height="143"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SFr-XT-giI">
+                        <rect key="frame" x="101" y="61" width="83" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ixo-ip-FYi">
+                        <rect key="frame" x="0.0" y="102" width="285" height="41"/>
+                        <color key="backgroundColor" red="0.18039215689999999" green="0.7725490196" blue="0.5450980392" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="41" id="dnL-Hw-Nhc"/>
+                        </constraints>
+                    </view>
+                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jY5-Sd-fiS">
+                        <rect key="frame" x="205" y="34" width="51" height="31"/>
+                    </switch>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="ixo-ip-FYi" secondAttribute="bottom" id="7b0-zn-8KN"/>
+                <constraint firstItem="ixo-ip-FYi" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="ANb-ec-v5b"/>
+                <constraint firstAttribute="trailing" secondItem="jY5-Sd-fiS" secondAttribute="trailing" constant="31" id="DVc-qZ-EsN"/>
+                <constraint firstItem="SFr-XT-giI" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="egO-Ud-Lal"/>
+                <constraint firstAttribute="trailing" secondItem="ixo-ip-FYi" secondAttribute="trailing" id="iuH-sk-LXE"/>
+                <constraint firstItem="SFr-XT-giI" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="o52-md-Eve"/>
+                <constraint firstItem="jY5-Sd-fiS" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="34" id="r85-UQ-vHH"/>
+            </constraints>
+            <size key="customSize" width="285" height="143"/>
+            <connections>
+                <outlet property="customView" destination="ixo-ip-FYi" id="3HD-qO-VQV"/>
+                <outlet property="switchButton" destination="jY5-Sd-fiS" id="S85-lL-2L0"/>
+            </connections>
+            <point key="canvasLocation" x="27.5" y="-54.5"/>
+        </collectionViewCell>
+    </objects>
+</document>

@@ -1,0 +1,7 @@
+target 'PageMenuExample' do
+use_frameworks!
+
+#pod 'PageMenu'
+pod 'PageMenu' , :git => 'https://github.com/orazz/PageMenu'
+
+end
